@@ -65,6 +65,13 @@ $(document).ready(function() {
       focusOnSelect: true
     });
 
+    $(".product_block_left_nav_item").click(function() {
+      var attr = $(this).attr("data-target");
+      $(".product_block_left_item").removeClass("active");
+      $(`#${attr}`).addClass("active");
+      $(".product_block_left_nav_item").removeClass("active");
+      $(this).addClass("active");
+    });
 
 
 });

@@ -78,7 +78,7 @@
         </div>
         <div class="product_block">
           <div class="product_block_left">
-            <div class="product_block_left_slider">
+            <div id="photo" class="product_block_left_item product_block_left_slider active">
               <div class="product_block_left_slider_for">
                 <div class="product_block_left_slider_for_prev">
                   <img src="img/product/arrow_left.svg" alt="">
@@ -116,21 +116,31 @@
                 </div>
               </div>
             </div>
+            <div id="genplan" class="product_block_left_item product_block_left_genplan">
+              <img src="img/product/genplan.jpg" alt="">
+            </div>
+            <div id="plan" class="product_block_left_item product_block_left_plan">
+              <img src="img/product/plan.jpg" alt="">
+            </div>
+            <div id="map" class="product_block_left_item product_block_left_map">
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Aee6b424a3767bad796b5d27ff7e607f4e9f059047169cfc0322b530829a18b66&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+            </div>
             <div class="product_block_left_nav">
-              <div class="product_block_left_nav_item active">
+              <div data-target="photo" class="product_block_left_nav_item active">
                 <span>Фото</span>
               </div>
-              <div class="product_block_left_nav_item">
+              <div data-target="genplan" class="product_block_left_nav_item">
                 <span>Генплан</span>
               </div>
-              <div class="product_block_left_nav_item">
+              <div data-target="plan" class="product_block_left_nav_item">
                 <span>План</span>
               </div>
-              <div class="product_block_left_nav_item">
+              <div data-target="map" class="product_block_left_nav_item">
                 <span>Карта</span>
               </div>
             </div>
           </div>
+
           <div class="product_block_right">
             <span class="product_block_right_uptitle">Арендная плата</span>
             <span class="product_block_right_price">500 000 руб/мес</span>
